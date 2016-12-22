@@ -1,0 +1,21 @@
+{
+  "name" : "ImageSize",
+  "version" : "1.0.0",
+  "description" : "Shows image dimensions and filesizes on a page",
+  "background" : { "scripts": ["background.js"] },
+  "permissions" : [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+   ],
+  "browser_action": {
+    "name": "Click to get URL"
+  },   
+  "minimum_chrome_version" : "6.0.0.0",
+  "icons" : {
+    "16" : "imageinfo-16.png",
+    "48" : "imageinfo-48.png",
+    "128" : "imageinfo-128.png"
+  },
+  "manifest_version": 2
+}
