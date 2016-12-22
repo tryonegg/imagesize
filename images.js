@@ -18,7 +18,8 @@ function addInfo(image){
 
     // move el into wrapper
     var info = document.createElement("ul");
-    info.innerHTML = "<li style='color:#fff'>Native  Size: " + image.naturalWidth+ "x" + image.naturalHeight + "</li>"
+    info.innerHTML = "<li><a  style='color:#fff;text-decoration:underline;' href='" + image.currentSrc + "' target='_blank'>View Image</a></li>"
+                    +"<li style='color:#fff'>Native  Size: " + image.naturalWidth+ "x" + image.naturalHeight + "</li>"
                     +"<li style='color:#fff'>Current Size: " + image.width + "x" + image.height + "</li>"
                     +"<li style='color:#fff'>Pixel Ratio: " + (Math.floor( (image.naturalWidth / image.width ) * 10 ) / 10) + "</li>"
                     +"<li style='color:#fff'>Container Size: " + image.parentElement.offsetWidth + "x" + image.parentElement.offsetHeight + "</li>"
